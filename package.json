@@ -1,0 +1,17 @@
+{
+  "name": "protractor",
+  "version": "1.0.0",
+  "description": "basic project",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "~3.4.0",
+    "protractor": "^6.0.0",
+    "webdriver-manager": "^12.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shreyansh",
+  "license": "ISC",
+  "postinstall": "cd ./node_modules/protractor && npm i webdriver-manager@latest && cd ../.. && ./node_modules/.bin/webdriver-manager update"
+}
